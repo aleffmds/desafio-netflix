@@ -8,31 +8,35 @@
     <!--owl css-->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
-    <title>NETFLIX CLONE</title>
+    <title>ANIME EXPRESS</title>
 </head>
 <body>
     <header> <!--Cabeçalho: aqui geralmente vão os o título do site, logo e menus.-->
         <div class="container">
-            <h2 class="logo">NETFLIX</h2>
+            <h2 class="logo">ANIME EXPRESS</h2>
             <nav> <!--Navegação/Menu do site.-->
-                <a href="#">Inicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
+                <a href="#">CATEGORIAS</a>
+                <a href="#">MAIS VISTOS</a>
+                <a href="#">LANÇAMENTOS</a>
+                <a href="#">CALENDÁRIO</a>
             </nav>
         </div>
     </header>
     <main> <!--Aqui vai o conteúdo principal do site.-->
        <div class="filme-principal">
            <div class="container">
-               <h3 class="titulo">CARGA EXPLOSIVA 3</h3>
-               <p class="descricao">Frank Martin é obrigado a conduzir Valentina, a filha de Leonid Vasilev, o chefe da Agência de Proteção Ambiental da Ucrânia. Ela foi sequestrada por Jonas Johnson, contratado por uma empresa de gerenciamento internacional de resíduos que deseja operar na Ucrânia.</p>
+               <h3 class="titulo">HUNTER x HUNTER</h3>
+               <p class="descricao">
+                A série conta a história de Gon Freecss, um garoto de 12 anos que pretende se tornar um Hunter, um caçador de tesouros, lugares perdidos e criaturas estranhas.
+
+Contudo, ao contrário da maioria dos Hunters que procuram fama e dinheiro, o herói da história tem uma motivação maior para querer ser um caçador – encontrar seu pai – um dos mais famosos hunters do mundo.
+                </p>
                 <div class="botoes">
-                    <button role="button" class="botao"> <!--role="button": indica que está propriedade é um botão onde quer que este site seja executado.-->
+                    <button role="button" class="botao" onclick="abrirVideo()"> <!--role="button": indica que está propriedade é um botão onde quer que este site seja executado.-->
                         <i class="fas fa-play"></i>
                         ASSISTIR AGORA
                     </button>
-                    <button role="button" class="botao"> 
+                    <button role="button" class="botao" onclick="abrirInfo()"> 
                         <i class="fas fa-info-circle"></i>  
                         MAIS INFORMAÇÕES
                  </button>
@@ -40,7 +44,7 @@
             </div>
        </div>  
     </main>
-    <div class="carrosel-fimes">
+    <div class="owl-filmes">
         <div class="owl-carousel owl-theme">
             <div class="item">
                 <img class="box-filmes" src="img/mini-01.jpg" alt="">
@@ -72,6 +76,12 @@
             <div class="item">
                 <img class="box-filmes" src="img/mini-10.jpg" alt="">
             </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini-11.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filmes" src="img/mini-12.jpg" alt="">
+            </div>
         </div>
     </div>
     <!--È recomendado que os scripts sejam chamados no final da página para evitar erro enquanto o navegador carrega a página.-->
@@ -79,5 +89,6 @@
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+    <script src="js/owl/botoes.js"></script>
 </body>
 </html>
